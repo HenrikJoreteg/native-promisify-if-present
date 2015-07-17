@@ -2,8 +2,11 @@ var isFunc = require('is-function')
 var slice = Array.prototype.slice
 var Promise
 
-if (typeof window !== 'undefined' || typeof global !== 'undefined') {
-  Promise = window.Promise || global.Promise
+if (typeof window !== 'undefined') {
+  Promise = window.Promise
+}
+if (typeof global !== 'undefined') {
+  Promise = global.Promise
 }
 
 module.exports = function promisify (func) {
