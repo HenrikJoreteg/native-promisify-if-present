@@ -1,7 +1,7 @@
 {
   "name": "native-promisify-if-present",
   "description": "Return a promise from a callback-as-last-argument function using native a Promise, but only if native Promises exist.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Henrik Joreteg <henrik@andyet.net>",
   "bugs": {
     "url": "https://github.com/henrikjoreteg/native-promisify-if-present/issues"
